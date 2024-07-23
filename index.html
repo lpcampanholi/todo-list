@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script-crud.js" defer></script>
+  <script src="timer.js" defer></script>
   <script src="tema.js" defer></script>
   <title>Lista de Tarefas</title>
 </head>
@@ -12,19 +13,34 @@
 <body>
 
   <main>
+
     <header class="cabecalho">
-      <!-- Ícone Lua -->
       <button class="icone_tema"></button>
     </header>
-
-    <h2 class="titulo">Lista de Tarefas</h2>
     
+    <h2 class="titulo">Timer</h2>
+    <section class="cronometro_container">
+      <nav>
+        <button class="button_timer botao_ativo" id="btnFoco">Foco</button>
+        <button class="button_timer" id="btnPausa">Pausa</button>
+        <button class="button_timer" id="btnDescanso">Descanso</button>
+      </nav>
+      <div class="cronometro"></div>
+      <button class="button" id="btnIniciar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 10">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+        </svg>
+        <span>Iniciar</span>
+      </button>
+    </section>
+  
+    <h2 class="titulo">Lista de Tarefas</h2>
     <ul class="listaDeTarefas"></ul>
-      
+  
     <button class="button" id="btnSalvar">Adicionar tarefa</button>
     
     <form class="formulario hidden">
-      <h2 class="titulo">Adicionar nova tarefa</h2>
+      <h2 class="titulo">Adicionar tarefa</h2>
       <div class="form_campo">
         <textarea class="textarea" placeholder="Escreva aqui a atividade"></textarea>
       </div>

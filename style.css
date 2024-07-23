@@ -63,7 +63,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .tarefa {
@@ -82,7 +82,7 @@ main {
 }
 
 .tarefa p {
-  margin-right: 0.5em;
+  margin-right: 0.8em;
   margin-left: 0.2em;
 }
 
@@ -103,7 +103,7 @@ main {
   border-radius: 0.5em;
 }
 
-.rodape_form{
+.rodape_form {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -140,6 +140,20 @@ main {
   background-color: var(--destaque);
 }
 
+.button_timer {
+  background-color: transparent;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  color: var(--destaque);
+  cursor: pointer;
+}
+
+.botao_ativo {
+  border: 1px solid var(--destaque);
+}
+
+
 #btnSalvar {
   margin: 1em;
 }
@@ -155,3 +169,22 @@ main {
   background-color: transparent;
   padding: 0;
 }
+
+/* Cronômetro */
+
+.cronometro_container {
+  color: var(--destaque);
+  width: 85%;
+  padding: 1em 0;
+  margin: 1em 0;
+  border: 1px solid var(--destaque);
+  border-radius: 0.5em;
+}
+
+.cronometro {
+  font-size: 1.5em;
+  color: var(--destaque);
+  margin: 1em 0;
+}
+
+
